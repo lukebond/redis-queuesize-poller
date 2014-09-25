@@ -1,0 +1,33 @@
+{
+  "name": "redis-queuesize-poller",
+  "version": "0.1.0",
+  "description": "Polls redis at specified interval to fetch the size of a list of queues and exposes results via a getter",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukebond/redis-queuesize-poller"
+  },
+  "keywords": [
+    "redis",
+    "queue",
+    "size",
+    "length",
+    "poll"
+  ],
+  "author": "Luke Bond <luke.n.bond@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukebond/redis-queuesize-poller/issues"
+  },
+  "homepage": "https://github.com/lukebond/redis-queuesize-poller",
+  "devDependencies": {
+    "error-plus": "0.0.1",
+    "tape": "^3.0.0"
+  },
+  "dependencies": {
+    "redis": "^0.12.1"
+  }
+}
