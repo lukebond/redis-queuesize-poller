@@ -8,7 +8,7 @@ Basic usage:
 var RedisQueueSizePoller = require('../index');
 var Redis = require('redis');
 var redis = Redis.createClient();
-var poller = new RedisQueueSizePoller({}, ['one', 'two', 'three']);
+var poller = new RedisQueueSizePoller({}, ['wow1', 'wow2', 'wow3']);
 
 redis.multi()
   .rpush('wow1', '1')
