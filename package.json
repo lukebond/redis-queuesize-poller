@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/lukebond/redis-queuesize-poller",
   "devDependencies": {
-    "error-plus": "0.0.1",
     "tape": "^3.0.0"
   },
   "dependencies": {
+    "error-plus": "0.0.1",
     "redis": "^0.12.1"
   }
 }
