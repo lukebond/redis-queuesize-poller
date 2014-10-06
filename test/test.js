@@ -38,6 +38,8 @@ test('Returns correct queue sizes', function (t) {
     .rpush('wow3', '3')
     .exec(function (err, result) {
       setTimeout(function () {
+        t.equal(err, null);
+        t.equal(result.length, 9);
         var sizes = poller.getQueueSizes();
         t.equal(sizes.wow1, 4, 'Queue sizes are correct');
         t.equal(sizes.wow2, 2, 'Queue sizes are correct');
