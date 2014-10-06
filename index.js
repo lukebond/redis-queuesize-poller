@@ -9,9 +9,9 @@ function RedisQueueSizePoller(options, queueNames) {
   }
 
   this.pollInterval = options.pollInterval || 5000;
-  this.redisClient = Redis.createClient(
-    { port: options.port, host: options.host,
-      password: options.password });
+  this.redisClient = Redis.createClient(options.port || 6379,
+    options.host || '127.0.0.1',
+    { password: options.password });
   this.queueNames = queueNames;
   this.queueSizes = {};
   this.stopping = false;
