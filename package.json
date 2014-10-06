@@ -1,6 +1,6 @@
 {
   "name": "redis-queuesize-poller",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Polls redis at specified interval to fetch the size of a list of queues and exposes results via a getter",
   "main": "index.js",
   "scripts": {
